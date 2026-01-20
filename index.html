@@ -3,324 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utkarsh Gupta - Robotics Engineer</title>
+    <title>Utkarsh Gupta | Robotics Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom scrollbar for a more modern look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Header & Navigation -->
-    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold text-slate-900">Utkarsh Gupta</a>
-                </div>
-                <nav class="hidden md:flex md:space-x-8">
-                    <a href="index.html#experience" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Experience</a>
-                    <a href="index.html#education" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Education</a>
-                    <a href="index.html#projects" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Projects</a>
-                    <a href="blog.html" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Blog</a>
-                    <a href="UtkarshGupta-resume.pdf" target="_blank" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">CV / Resume</a>
-                </nav>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-slate-600 hover:text-sky-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 BORDER="0" 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                    </button>
-                </div>
+<header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 h-16 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-slate-900">Utkarsh Gupta</a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#experience" class="text-slate-600 hover:text-sky-600">Experience</a>
+            <a href="#education" class="text-slate-600 hover:text-sky-600">Education</a>
+            <a href="#projects" class="text-slate-600 hover:text-sky-600">Projects</a>
+            <a href="blog.html" class="text-slate-600 hover:text-sky-600">Blog</a>
+            <a href="UtkarshGupta-resume.pdf" target="_blank" class="text-slate-600 hover:text-sky-600">CV</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-16">
+
+<!-- ABOUT -->
+<section class="flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="flex-grow">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">
+            Robotics Engineer focused on Perception & Autonomy
+        </h2>
+        <div class="text-slate-600 text-lg leading-relaxed space-y-4">
+            <p>
+                I work on both hands-on robotic systems and simulated environments, with a focus on perception,
+                autonomy, and end-to-end decision-making models.
+            </p>
+            <p>
+                My experience spans sensor fusion, 3D reconstruction, navigation, and vision-language-action (VLA)
+                models. I have deployed perception and planning stacks on real robots and built large-scale simulation
+                pipelines for data collection, real-to-sim transfer, and policy training.
+            </p>
+            <p>
+                I enjoy working across the full robotics stack—from data and models to deployment and evaluation—
+                especially in collaborative research and applied autonomy settings.
+            </p>
+        </div>
+
+        <div class="mt-8 flex gap-4">
+            <a href="https://linkedin.com/in/utkgupt" target="_blank"
+               class="bg-sky-600 text-white px-5 py-2 rounded-lg hover:bg-sky-700">
+                LinkedIn
+            </a>
+            <a href="https://github.com/uttug" target="_blank"
+               class="bg-slate-700 text-white px-5 py-2 rounded-lg hover:bg-slate-800">
+                GitHub
+            </a>
+            <a href="mailto:utkarshgupta2178@gmail.com"
+               class="bg-slate-200 text-slate-800 px-5 py-2 rounded-lg hover:bg-slate-300">
+                Contact
+            </a>
+        </div>
+    </div>
+
+    <!-- PHOTO (FACE-CROPPED VIA CSS) -->
+    <div class="flex-shrink-0">
+        <img src="self.jpg"
+             alt="Utkarsh Gupta"
+             class="rounded-xl w-52 h-52 object-cover shadow-lg border-4 border-white"
+             style="object-position: center 20%;">
+    </div>
+</section>
+
+<hr class="my-20 border-slate-200">
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+
+    <div class="space-y-12 max-w-4xl mx-auto">
+
+        <div class="flex flex-col sm:flex-row gap-6">
+            <div class="sm:w-1/3 sm:text-right">
+                <h3 class="font-semibold">Autonomy Engineering Intern</h3>
+                <p class="text-slate-500">Advanced Drone Solutions</p>
+                <p class="text-slate-500">Jan 2026 – Present</p>
+            </div>
+            <div class="sm:w-2/3 sm:border-l-2 pl-6">
+                <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <li>Integrated custom autonomy modules into production drone platforms.</li>
+                    <li>Developed and optimized ML-driven vision pipelines for autonomy stacks.</li>
+                    <li>Conducted R&D on perception and autonomy frameworks.</li>
+                </ul>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-sky-600 hover:bg-slate-100">Experience</a>
-                <a href="index.html#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-sky-600 hover:bg-slate-100">Education</a>
-                <a href="index.html#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-sky-600 hover:bg-slate-100">Projects</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-sky-600 hover:bg-slate-100">Blog</a>
-                <a href="UtkarshGupta-resume.pdf" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-sky-600 hover:bg-slate-100">CV / Resume</a>
-            </nav>
+
+        <div class="flex flex-col sm:flex-row gap-6">
+            <div class="sm:w-1/3 sm:text-right">
+                <h3 class="font-semibold">Research Assistant</h3>
+                <p class="text-slate-500">PSI Lab, USC</p>
+                <p class="text-slate-500">Oct 2025 – Present</p>
+            </div>
+            <div class="sm:w-2/3 sm:border-l-2 pl-6">
+                <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <li>Built simulated data pipelines in IsaacSim and MuJoCo for real-to-sim VLA training.</li>
+                    <li>Implemented domain randomization and force-feedback for diverse data generation.</li>
+                    <li>Integrated heuristic and VLA policies for trajectory collection.</li>
+                </ul>
+            </div>
         </div>
-    </header>
 
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-
-        <!-- About / Hero Section -->
-        <section id="about" class="flex flex-col-reverse md:flex-row items-center gap-12">
-            <div class="flex-grow">
-                 <h2 class="text-3xl font-bold text-slate-900 mb-6">The Robot's Eye Doctor</h2>
-                 <div class="text-slate-600 text-lg leading-relaxed space-y-4">
-                    <p>
-                        You could call me an aspiring ophthalmologist for robots. I'm fascinated by the challenge of giving machines the ability to perceive, understand, and interact with our complex world. My goal is to build autonomous systems that see clearly and act intelligently.
-                    </p>
-                    <p>
-                        To do this, I work on the entire robotics pipeline, from perception and sensor fusion to motion planning and human-robot interaction. I have hands-on experience developing 3D reconstruction pipelines, deploying navigation algorithms for AMRs and AGVs, and leveraging machine learning for computer vision. I love collaborative environments and enjoy tackling challenges that push the boundaries of what's possible. Feel free to reach out if you want to collaborate or just discuss anything robotics!
-                    </p>
-                </div>
-                 <div class="mt-8 flex gap-4">
-                    <a href="https://linkedin.com/in/utkgupt" target="_blank" class="bg-sky-600 text-white font-medium py-2 px-5 rounded-lg hover:bg-sky-700 transition-all duration-300 shadow-sm">
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/uttug" target="_blank" class="bg-slate-700 text-white font-medium py-2 px-5 rounded-lg hover:bg-slate-800 transition-all duration-300 shadow-sm">
-                        GitHub
-                    </a>
-                     <a href="mailto:utkarshg@usc.edu" class="bg-slate-200 text-slate-800 font-medium py-2 px-5 rounded-lg hover:bg-slate-300 transition-all duration-300">
-                        Contact Me
-                    </a>
-                </div>
+        <div class="flex flex-col sm:flex-row gap-6">
+            <div class="sm:w-1/3 sm:text-right">
+                <h3 class="font-semibold">Research Assistant</h3>
+                <p class="text-slate-500">CPS Vida Lab, USC</p>
+                <p class="text-slate-500">Nov 2024 – Nov 2025</p>
             </div>
-            <div class="flex-shrink-0">
-                <img src="self.jpg" alt="Utkarsh Gupta" class="rounded-xl w-48 h-48 md:w-56 md:h-56 object-cover shadow-lg border-4 border-white">
+            <div class="sm:w-2/3 sm:border-l-2 pl-6">
+                <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <li>Worked on interpretability and safety analysis for VLA models.</li>
+                    <li>Improved action success rate by 20% using human-in-the-loop policies.</li>
+                    <li>Developed imitation learning strategies for multi-agent path finding.</li>
+                </ul>
             </div>
-        </section>
-        
-        <hr class="my-16 md:my-24 border-slate-200">
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Experience</h2>
-            <div class="max-w-4xl mx-auto space-y-12">
-                <!-- Experience Item 1 -->
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <div class="sm:w-1/3 text-left sm:text-right">
-                        <h3 class="text-lg font-semibold text-slate-800">Robotics Engineering Intern</h3>
-                        <p class="text-slate-500">ERIC Robotics</p>
-                        <p class="text-slate-500">May 2025 - Aug 2025</p>
-                    </div>
-                    <div class="sm:w-2/3 sm:border-l-2 border-slate-200 pl-6">
-                        <ul class="list-disc list-inside text-slate-600 space-y-2">
-                            <li>Built real-time Railtrack feature extraction and 3D safety box algorithms with LiDAR/cameras for safer dynamic AGV navigation.</li>
-                            <li>Optimized AMR initial pose estimation using LiDAR scans, cutting localization time by 40%.</li>
-                            <li>Deployed system-wide monitoring/control scripts for lifecycle node for better system consistency.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Experience Item 2 -->
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <div class="sm:w-1/3 text-left sm:text-right">
-                        <h3 class="text-lg font-semibold text-slate-800">Robotics Research Assistant</h3>
-                        <p class="text-slate-500">CPS Vida Lab, USC</p>
-                        <p class="text-slate-500">Nov 2024 - Present</p>
-                    </div>
-                    <div class="sm:w-2/3 sm:border-l-2 border-slate-200 pl-6">
-                        <ul class="list-disc list-inside text-slate-600 space-y-2">
-                            <li>Conducting research on Multi-Agent Path Finding and Human-Robot Interaction for complex task breakdown.</li>
-                            <li>Developing collaborative strategies between agents to find distributed goals using imitation learning.</li>
-                            <li>Leveraging language model policies to improve performance for low confidence actions in VLAs.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Experience Item 3 -->
-                 <div class="flex flex-col sm:flex-row gap-6">
-                    <div class="sm:w-1/3 text-left sm:text-right">
-                        <h3 class="text-lg font-semibold text-slate-800">Machine Learning Intern</h3>
-                        <p class="text-slate-500">Center for Development of Advanced Computing (CDAC)</p>
-                        <p class="text-slate-500">Jul 2023 - Dec 2023</p>
-                    </div>
-                    <div class="sm:w-2/3 sm:border-l-2 border-slate-200 pl-6">
-                        <ul class="list-disc list-inside text-slate-600 space-y-2">
-                            <li>Improved quality of heritage artwork images by implementing denoising techniques for various distortions.</li>
-                            <li>Increased PSNR by 10.2% on average through PSO optimization for better denoised image quality.</li>
-                            <li>Maximized image quality and processing efficiency by PSO algorithm optimization and sharpening filter integration.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="my-16 md:my-24 border-slate-200">
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Education</h2>
-            <div class="max-w-4xl mx-auto space-y-12">
-                 <!-- Education Item 1 -->
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <div class="sm:w-1/3 text-left sm:text-right">
-                        <h3 class="text-lg font-semibold text-slate-800">M.S. in Computer Science</h3>
-                        <p class="text-slate-500">University of Southern California</p>
-                        <p class="text-slate-500">2024 - 2026</p>
-                    </div>
-                    <div class="sm:w-2/3 sm:border-l-2 border-slate-200 pl-6">
-                        <p class="text-slate-600">Place where i went all in on robotics! <br> Relevant Coursework: Intro to Robotics, Deep Learning, Robotic Perception, Autonomous Systems.</p>
-                    </div>
-                </div>
-                 <!-- Education Item 2 -->
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <div class="sm:w-1/3 text-left sm:text-right">
-                        <h3 class="text-lg font-semibold text-slate-800">B.Tech in Computer Science</h3>
-                        <p class="text-slate-500">Maharashtra Institute of Technology, Pune</p>
-                        <p class="text-slate-500">2020 - 2024</p>
-                    </div>
-                    <div class="sm:w-2/3 sm:border-l-2 border-slate-200 pl-6">
-                        <p class="text-slate-600">Part of Institute of Artificial Intelligence Lab (explored constrained optimization). Worked at IISER Pune for geospatial data analysis (Urban Heat Island Detection) </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="my-16 md:my-24 border-slate-200">
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Project Card 1 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 border border-slate-200">
-                    <img src="3d.gif" alt="Project 1" class="w-full h-48 object-contain bg-slate-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-800 mb-2">3D Reconstruction for Digital Twin</h3>
-                        <p class="text-slate-600 mb-4">A reconstruction pipeline to generate 3D models from images, integrating them into Digital Twins for industrial inspection.</p>
-<!--                         <a href="project-1.html" class="text-sky-600 font-medium hover:underline">View Details &rarr;</a> -->
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 border border-slate-200">
-                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Project+GIF" alt="Project 2" class="w-full h-48 object-contain bg-slate-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Vision-Based Collision Avoidance</h3>
-                        <p class="text-slate-600 mb-4">A camera-only ADAS pipeline for real-time obstacle detection and emergency rerouting using KITTI stereo data (under work)</p>
-<!--                         <a href="project-2.html" class="text-sky-600 font-medium hover:underline">View Details &rarr;</a> -->
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 border border-slate-200">
-                    <img src="grid-rl.gif" alt="Project 3" class="w-full h-48 object-contain bg-slate-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Reinforcement Learning for Stealth</h3>
-                        <p class="text-slate-600 mb-4">A multi-agent RL environment where agents locate goals with limited FOV while evading moving guards.</p>
-<!--                         <a href="project-3.html" class="text-sky-600 font-medium hover:underline">View Details &rarr;</a> -->
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 border border-slate-200">
-                    <img src="rrt.gif" alt="Project 4" class="w-full h-48 object-contain bg-slate-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Motion Planning with 6-DOF Arm</h3>
-                        <p class="text-slate-600 mb-4">Implemented RRT for motion planning of a 6-DOF robotic manipulator using Python and ROS, with goal-biased sampling.</p>
-<!--                         <a href="project-4.html" class="text-sky-600 font-medium hover:underline">View Details &rarr;</a> -->
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <hr class="my-16 md:my-24 border-slate-200">
-
-        <!-- Skills Section -->
-        <section id="skills">
-             <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Technical Skills</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Languages, Frameworks & Tools -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200">
-                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Languages, Frameworks & Tools</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Python, C++, CUDA</li>
-                        <li>ROS2</li>
-                        <li>PyTorch, TensorFlow</li>
-                        <li>OpenCV, NumPy, SciPy</li>
-                        <li>Linux, Git</li>
-                    </ul>
-                </div>
-
-                <!-- Perception -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200">
-                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Perception</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>3D Data Processing</li>
-                        <li>Sensor Fusion (Camera & LiDAR)</li>
-                        <li>3D Reconstruction (SfM)</li>
-                        <li>Computer Vision</li>
-                    </ul>
-                </div>
-
-                <!-- Planning & Localization -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200">
-                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Planning & Localization</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Motion Planning (Nav2, RRT, A*)</li>
-                        <li>SLAM</li>
-                        <li>Pose Estimation (EKF)</li>
-                    </ul>
-                </div>
-
-                <!-- Simulation -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200">
-                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Simulation</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Gazebo, Rviz</li>
-                        <li>NVIDIA Omniverse</li>
-                        <li>Digital Twins</li>
-                    </ul>
-                </div>
-
-                <!-- Machine Learning for Robotics -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200">
-                    <h3 class="text-xl font-semibold text-slate-800 mb-4">Machine Learning for Robotics</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Reinforcement Learning (DQN)</li>
-                        <li>Vision-Language-Action Models (RT-X, Octo)</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-100 text-slate-500 py-6 mt-24 border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Utkarsh Gupta. Made with help from my bud Gemini!</p>
         </div>
-    </footer>
 
-    <script>
-        // JavaScript for mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+        <div class="flex flex-col sm:flex-row gap-6">
+            <div class="sm:w-1/3 sm:text-right">
+                <h3 class="font-semibold">Robotics Engineering Intern</h3>
+                <p class="text-slate-500">ERIC Robotics</p>
+                <p class="text-slate-500">May 2025 – Aug 2025</p>
+            </div>
+            <div class="sm:w-2/3 sm:border-l-2 pl-6">
+                <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <li>Designed real-time railtrack and 3D safety algorithms for AGVs.</li>
+                    <li>Reduced AMR localization time by 40% using optimized LiDAR pose estimation.</li>
+                    <li>Deployed CUDA-accelerated perception pipelines on Jetson AGX Orin.</li>
+                </ul>
+            </div>
+        </div>
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    </div>
+</section>
 
-        // Close mobile menu when a link is clicked
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                // Keep the menu open for section links on the same page
-                if (link.getAttribute('href').startsWith('#')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
+<hr class="my-20 border-slate-200">
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+        <div class="bg-white border rounded-xl shadow">
+            <img src="3d.gif" class="h-48 w-full object-contain bg-slate-100">
+            <div class="p-6">
+                <h3 class="font-semibold text-lg">Digital Twin via 3D Reconstruction</h3>
+                <p class="text-slate-600 mt-2">
+                    Built a photogrammetry-based pipeline for high-fidelity 3D reconstruction of industrial components,
+                    including partial-view scans using Poisson surface reconstruction.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white border rounded-xl shadow">
+            <img src="grid-rl.gif" class="h-48 w-full object-contain bg-slate-100">
+            <div class="p-6">
+                <h3 class="font-semibold text-lg">RL-Based Stealth Navigation</h3>
+                <p class="text-slate-600 mt-2">
+                    Designed a multi-agent RL environment where agents achieved 85% success under partial observability
+                    while evading dynamic adversaries.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="bg-slate-100 py-6 text-center text-slate-500 border-t">
+    © 2025 Utkarsh Gupta
+</footer>
+
 </body>
 </html>
-```eof
